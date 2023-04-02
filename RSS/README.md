@@ -13,22 +13,24 @@
 
 Проект реализован на 2-х Активити и 2 Фрагментах с использованием :
 
-Патерна MVVM
-View Binding
+Патерна MVVM  
+View Binding  
+
 а так же библиотек:
 
-Retrofit
-Okhttp3
-Coroutines
-Navigation
-Room
-Picasso
-Livedata
-ViewModel
-Tickaroo
+Retrofit  
+Okhttp3  
+Coroutines  
+Navigation  
+Room  
+Picasso  
+Livedata  
+ViewModel  
+Tickaroo  
+
 Рефакторинг проекта:
 
-Исправление архитектуры проекта в соотвествии с требованиями Clean архитектуры
-Добавления возможности просмотра полной информации на сайте https://3dnews.ru/subscribe с использованием Chrome Custom Tab
-Добавление и реализация проекта с библиотекой Dagger2
-Добавление Диалога при выходе из проекта.
+Исправление архитектуры проекта в соотвествии с требованиями Clean архитектуры  
+Добавления возможности просмотра полной информации на сайте https://3dnews.ru/subscribe с использованием Chrome Custom Tab  
+Добавление и реализация проекта с библиотекой Dagger2  
+Добавление Диалога при выходе из проекта.  
