@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Whois</string>
+    <string name="url_input"><![CDATA[<Введите URL адрес>]]></string>
+</resources>

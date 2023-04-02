@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AllMovies</string>
+    <string name="upcoming">Скоро в кино</string>
+    <string name="popular_movies">Популярные</string>
+    <string name="favorites_movie">Избранное</string>
+    <string name="search_movies">Найти</string>
+
+
+    <string name="hello_popular_movies_fragment">Popular movies fragment</string>
+    <string name="hello_upcoming_movies_fragment">Upcoming movies fragment</string>
+    <string name="hello_search_movies_fragment">Hello blank fragment</string>
+    <string name="hello_favorites_movies_fragment">Favorites movies fragment</string>
+    <string name="input_editText">Поиск в текущем списке</string>
+    <string name="search_hint">Введите название фильма</string>
+    <string name="List_of_popular">Список популярных фильмов</string>
+    <string name="list_of_favorites">Список избранных фильмов</string>
+    <string name="list_of_upcoming">Список предстоящих фильмов</string>
+
+</resources>

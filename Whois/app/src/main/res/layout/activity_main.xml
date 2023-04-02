@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+
+    <EditText
+        android:id="@+id/inputDomainName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginStart="10dp"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:hint="@string/url_input"
+        android:inputType="textWebEmailAddress"
+        android:background="@drawable/edit_text_frame"
+        android:padding="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_search"/>
+
+    <ImageButton
+        android:id="@+id/button_search"
+        android:layout_width="48dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/edit_text_frame"
+        android:src="@drawable/baseline_search"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toEndOf="@+id/inputDomainName"
+        app:layout_constraintTop_toTopOf="@+id/inputDomainName"
+        app:layout_constraintBottom_toBottomOf="@+id/inputDomainName"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/domain_url_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputDomainName"
+        tools:listitem = "@layout/item_domain"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

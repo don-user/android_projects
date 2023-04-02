@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/upcomingMoviesFragment">
+
+    <fragment
+        android:id="@+id/upcomingMoviesFragment"
+        android:name="ru.yundon.allmovies.ui.fragments.upcoming.UpcomingMoviesFragment"
+        android:label="@string/hello_upcoming_movies_fragment"
+        tools:layout="@layout/fragment_upcoming_movies"/>
+
+    <fragment
+        android:id="@+id/popularMoviesFragment"
+        android:name="ru.yundon.allmovies.ui.fragments.popular.PopularAllMoviesFragment"
+        android:label="@string/hello_popular_movies_fragment"
+        tools:layout="@layout/fragment_popular_movies"/>
+
+    <fragment
+        android:id="@+id/searchMoviesFragment"
+        android:name="ru.yundon.allmovies.ui.fragments.search.SearchMoviesFragment"
+        android:label="@string/hello_search_movies_fragment"
+        tools:layout="@layout/fragment_search_movies"/>
+
+
+    <fragment
+        android:id="@+id/favoritesMoviesFragment"
+        android:name="ru.yundon.allmovies.ui.fragments.favorites.FavoritesAllMoviesFragment"
+        android:label="@string/hello_favorites_movies_fragment"
+        tools:layout="@layout/fragment_favorites_movies"/>
+
+</navigation>

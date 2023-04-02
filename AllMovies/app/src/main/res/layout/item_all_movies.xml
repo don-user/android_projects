@@ -1,0 +1,96 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="7dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp"
+    app:contentPadding="10dp"
+    app:cardBackgroundColor="#FFFFFF">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/itemDomainUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:gravity="center"
+            android:text="Вечные"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tViewRelease"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дата релиза: 15.12.2021"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tViewTitle" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tViewRelease" />
+
+
+        <TextView
+            android:id="@+id/tViewRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5.25"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@id/imageView"/>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="false"
+            android:layout_marginStart="10dp"
+            android:numStars="10"
+            android:rating="8.3"
+            android:stepSize="0.1"
+            android:theme="@style/MyRatingBar"
+            app:layout_constraintTop_toTopOf="@id/tViewRating"
+            app:layout_constraintBottom_toBottomOf="@id/tViewRating"
+            app:layout_constraintStart_toEndOf="@id/tViewRating"/>
+
+
+        <ImageView
+            android:id="@+id/favoritesImage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/favorite_border_black"
+            app:layout_constraintBottom_toBottomOf="@id/ratingBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ratingBar" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

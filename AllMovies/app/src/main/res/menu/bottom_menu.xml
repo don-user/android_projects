@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/upcomingMoviesFragment"
+        android:icon="@drawable/baseline_movie"
+        android:title="@string/upcoming"/>
+
+    <item
+        android:id="@+id/popularMoviesFragment"
+        android:icon="@drawable/baseline_local_movies_white_24dp"
+        android:title="@string/popular_movies"/>
+
+    <item
+        android:id="@+id/searchMoviesFragment"
+        android:icon="@drawable/baseline_search_white"
+        android:title="@string/search_movies"/>
+
+    <item
+        android:id="@+id/favoritesMoviesFragment"
+        android:icon="@drawable/baseline_favorite"
+        android:title="@string/favorites_movie"/>
+
+</menu>

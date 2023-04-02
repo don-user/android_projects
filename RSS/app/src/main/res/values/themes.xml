@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RSS" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/grey_200</item>
+        <item name="colorPrimaryVariant">@color/grey_500</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Widget.Custom.Toolbar" parent="Widget.MaterialComponents.Toolbar">
+        <item name="android:paddingEnd">8dp</item>
+        <item name="contentInsetStart">16dp</item>
+        <item name="android:background">@color/grey_200</item>
+        <item name="contentInsetStartWithNavigation">20dp</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+</resources>
